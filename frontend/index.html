@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Canis AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cover">
+    <header class="topbar">
+      <div class="brand">
+        <img src="assets/logo.svg" alt="Canis AI" class="brand-logo" onerror="this.src='assets/logo.png'">
+        <span class="brand-name">Canis AI</span>
+      </div>
+      <div class="topbar-actions">
+        <select id="language"></select>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <span class="theme-icon-light">☀</span>
+          <span class="theme-icon-dark">☾</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="cover-main">
+      <div class="cover-hero">
+        <img src="assets/logo.svg" alt="" class="cover-hero-img" onerror="this.src='assets/logo.png'">
+        <div class="cover-brand-name">Canis AI</div>
+      </div>
+      <h1 class="cover-headline" id="coverHeadline">A calmer way to know<br>what's safe in your inbox</h1>
+      <p class="cover-sub" id="coverSub">Canis AI reads your Gmail, checks every message against real phishing signals, and explains what it finds — clearly, and without the noise.</p>
+      <a href="http://localhost:8000/auth/login" class="btn-primary" id="loginBtn">Sign in with Google</a>
+    </main>
+
+    <footer class="cover-footer">
+      <span><i class="dot"></i> <span id="footRules">Rule-based detection</span></span>
+      <span><i class="dot"></i> <span id="footIntel">Threat intelligence</span></span>
+      <span><i class="dot"></i> <span id="footAi">Plain-language AI</span></span>
+    </footer>
+  </div>
+
+  <script src="theme.js"></script>
+  <script src="cover.js"></script>
+</body>
+</html>

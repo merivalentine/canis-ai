@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Canis AI — Inbox</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <nav class="sidebar">
+      <div class="sidebar-logo">
+        <img src="assets/logo.png" alt="Canis AI" onerror="this.style.display='none'">
+      </div>
+      <div class="sidebar-icons">
+        <button class="sidebar-icon active" title="Inbox">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M3 8l9 6 9-6M5 5h14a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <a href="dashboard.html" class="sidebar-icon" title="Dashboard">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M3 3v18h18M7 15l4-6 3 4 5-8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="threats.html" class="sidebar-icon" title="Threats">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v6c0 4.5-3 8-7 9-4-1-7-4.5-7-9V6l7-3z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <div class="sidebar-bottom">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <span class="theme-icon-light">☀</span>
+          <span class="theme-icon-dark">☾</span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="app-main">
+      <header class="topbar-inbox">
+        <div class="brand">
+          <span class="brand-name">Canis AI</span>
+          <span class="brand-sub" id="brandSub">AI Phishing Detector</span>
+        </div>
+        <div class="topbar-actions">
+          <a href="dashboard.html" class="btn-secondary" id="dashboardLink">Dashboard</a>
+          <select id="language"></select>
+          <div class="account-menu">
+            <button class="account-btn" id="accountBtn" aria-label="Account menu">M</button>
+            <div class="account-dropdown" id="accountDropdown">
+              <a href="http://localhost:8000/auth/logout" class="account-dropdown-item">Log out</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="content">
+        <section class="panel inbox-col">
+          <h2 id="inboxTitle">Inbox</h2>
+          <div id="emails" class="email-list"></div>
+        </section>
+
+        <section class="report-col">
+          <div class="panel preview-panel">
+            <div id="emailPreview" class="email-preview"></div>
+          </div>
+
+          <div id="reportBody"></div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script src="theme.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
