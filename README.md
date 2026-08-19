@@ -290,46 +290,7 @@ These controls would need to be strengthened before a public production deployme
 
 ## Project Structure
 
-canis-ai/
-│
-├── backend/
-│   ├── ai_service.py
-│   ├── auth.py
-│   ├── database.py
-│   ├── gmail_service.py
-│   ├── main.py
-│   ├── rule_engine.py
-│   ├── virustotal_service.py
-│   └── requirements.txt
-│
-├── frontend/
-│   ├── assets/
-│   │   ├── logo.png
-│   │   ├── logo.svg
-│   │   ├── screenshots/
-│   │   │   ├── canis_ai_architecture_en.png
-│   │   │   ├── canis_ai_dataflow_en.png
-│   │   │   ├── canislogo.png
-│   │   │   ├── dashboard.png
-│   │   │   ├── inbox.png
-│   │   │   └── logs.png
-│   │   └── videos/
-│   │       ├── cover-demo.mp4
-│   │       └── inbox-dashboard-logs-demo.mp4
-│   │
-│   ├── dashboard.html
-│   ├── dashboard.js
-│   ├── inbox.html
-│   ├── index.html
-│   ├── script.js
-│   ├── style.css
-│   ├── theme.js
-│   ├── threats.html
-│   └── threats.js
-│
-├── .env.example
-├── .gitignore
-└── README.md
+
 
 ---
 
