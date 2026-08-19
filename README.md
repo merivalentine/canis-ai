@@ -8,7 +8,7 @@
 
 <p><em>AI-Assisted Email Phishing Detection Platform</em></p>
 
-<p>Detect. Investigate. Understand.</p>
+<p>A calmer way to know what's safe in your inbox.</p>
 
 <br>
 
