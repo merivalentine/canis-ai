@@ -46,21 +46,23 @@ The system produces a **0–100 risk score**, severity classification, supportin
 
 ### Cover Demonstration
 
-<a href="frontend/assets/videos/cover-demo.mp4">
-<img src="frontend/assets/screenshots/dashboard.png" alt="CANIS AI demonstration" width="900">
-</a>
+<img src="frontend/assets/videos/cover-demo.gif" alt="CANIS AI demonstration" width="900">
 
-*Click the image to open the demonstration video.*
+### Built for Accessibility and Personalization
+
+CANIS is designed to be approachable for users with different language preferences and visual needs.
+
+- **10-language interface** — The application supports 10 languages across the interface, with AI-generated security explanations available in the user's selected language.
+- **Light and dark modes** — Users can switch between light and dark themes throughout the application.
+- **Clear risk communication** — Technical security findings are translated into concise, human-readable explanations and recommended actions.
 
 ### Full Interface Walkthrough
 
-<a href="frontend/assets/videos/inbox-dashboard-logs-demo.mp4">
-<img src="frontend/assets/screenshots/inbox.png" alt="CANIS AI interface walkthrough" width="900">
-</a>
+<img src="frontend/assets/videos/inbox-dashboard-logs-demo.gif" alt="CANIS AI interface walkthrough" width="900">
 
 *Inbox → Dashboard → Logs*
 
-*Click the image to open the full walkthrough.*
+
 
 ---
 
